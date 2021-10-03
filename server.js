@@ -12,6 +12,6 @@ app.use('/api',require('./routes/api.routes'))
 
 
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 app.listen(PORT, () => { console.log(`app has been started on port ${PORT}`) })
